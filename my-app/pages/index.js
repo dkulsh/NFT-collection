@@ -177,7 +177,7 @@ export default function Home() {
 
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, provider);
   
-      const _owner = await nftContract.getOwner();
+      const _owner = await nftContract.owner();
   
       const signer = await getProviderOrSigner(true);
   
